@@ -38,6 +38,27 @@ public class Magpie3
 		{
 			response = "Why so negative?";
 		}
+		else if (statement.indexOf("yes") >= 0)
+
+		{
+
+			response = "I agree.";
+
+		}
+		else if (statement.indexOf("?") >= 0)
+
+		{
+
+			response = "I'm not sure.";
+
+		}
+		else if (statement.indexOf("you") >= 0)
+
+		{
+
+			response = "Why do you ask?";
+
+		}
 		else if (findKeyword(statement, "mother") >= 0
 				|| findKeyword(statement, "father") >= 0
 				|| findKeyword(statement, "sister") >= 0
